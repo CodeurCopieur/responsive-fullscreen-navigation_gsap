@@ -1,0 +1,166 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh; }
+
+body {
+  background: url(../img/a-h-a-n-a-n-s38qotUIC5Y-unsplash.jpg) no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  color: #000 !important; }
+  body .wrapper {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0; }
+  body .menu-btn {
+    position: fixed;
+    margin: 1.2em;
+    right: 0;
+    top: 20px;
+    z-index: 1; }
+  body .hamburger {
+    width: 3rem;
+    height: 1.2rem;
+    cursor: pointer; }
+    body .hamburger .line {
+      width: 100%;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      display: block;
+      right: 0; }
+      body .hamburger .line:nth-child(1) {
+        top: 0; }
+      body .hamburger .line:nth-child(2) {
+        bottom: 0;
+        margin-top: -1px;
+        width: 1.5rem; }
+  body .row {
+    width: 100%; }
+  body .row, body .col-lg {
+    margin: 0 !important;
+    padding: 0 !important; }
+  body .col-lg {
+    height: 100vh; }
+    body .col-lg.overlay {
+      background: #000;
+      position: absolute;
+      top: -100%; }
+  body nav ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    body nav ul li {
+      display: inline-block;
+      font-family: Arial, Helvetica, sans-serif;
+      position: relative;
+      color: #fff;
+      text-transform: uppercase;
+      cursor: pointer; }
+      body nav ul li:not(:last-child) {
+        margin-right: 120px; }
+      body nav ul li::before {
+        background-size: cover !important; }
+
+li:first-child:hover::before {
+  content: '';
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/rex-way.jpg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out; }
+
+li:nth-child(2):hover::before {
+  content: '';
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/marcelo-rangel.jpg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out; }
+
+li:nth-child(3):hover::before {
+  content: '';
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/james-opas.jpg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out; }
+
+li:nth-child(4):hover::before {
+  content: '';
+  z-index: -1;
+  width: 300px;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top: -180px;
+  left: -30px;
+  background: url(../img/gabriel-silverio.jpg);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease-in-out; }
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+    top: -160px; }
+  50% {
+    opacity: 1;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -180px; } }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    top: -160px; }
+  50% {
+    opacity: 1;
+    top: -180px; }
+  100% {
+    opacity: 1;
+    top: -180px; } }
+
+@media (max-width: 1200px) {
+  li {
+    text-align: center;
+    display: block !important;
+    margin: 0 !important;
+    padding: 20px 0; }
+    li:hover {
+      width: 0 !important; } }
